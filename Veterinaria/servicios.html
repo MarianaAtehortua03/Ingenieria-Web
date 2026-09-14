@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - Servicios</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria</h1>
+    </header>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/acerca">Acerca de</a>
+        <a href="/registro">Registro</a>
+        <a href="/servicios">Servicios</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Agendamiento de Citas Clínicas</h2>
+            <p><strong>Requisito:</strong> Debe ingresar el ID generado previamente en el registro de la mascota.</p>
+
+            <form action="/citas" method="POST">
+                <label for="mascota_id">ID de la Mascota:</label>
+                <input type="number" id="mascota_id" name="mascota_id" placeholder="Ej: 1" required>
+
+                <label for="fecha">Fecha de la Cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="motivo">Motivo de Consulta:</label>
+                <textarea id="motivo" name="motivo" required placeholder="Describa el motivo..."></textarea>
+
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Universidad Cooperativa de Colombia - Ingeniería Web - Mariana Atehortua Grajales</p>
+    </footer>
+</body>
+</html>

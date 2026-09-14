@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - Registro</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria</h1>
+    </header>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/acerca">Acerca de</a>
+        <a href="/registro">Registro</a>
+        <a href="/servicios">Servicios</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Registro de Mascota</h2>
+            <form action="/mascotas" method="POST">
+                <label for="nombre">Nombre de la Mascota:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="especie">Especie:</label>
+                <input type="text" id="especie" name="especie" placeholder="Ej: Perro, Gato" required>
+
+                <label for="propietario">Nombre del Propietario:</label>
+                <input type="text" id="propietario" name="propietario" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <button type="submit">Registrar Mascota</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Universidad Cooperativa de Colombia - Ingeniería Web - Mariana Atehortua Grajales</p>
+    </footer>
+</body>
+</html>
