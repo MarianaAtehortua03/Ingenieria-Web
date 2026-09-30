@@ -138,3 +138,15 @@ http://localhost:3000
 * **Respuesta 404:** El ingreso a URLs no definidas retorna la pantalla de error con código `404`.
 
 * **Reproducibilidad:** El proyecto se probó clonando el repositorio desde cero y eliminando el archivo `.db`, verificando que el servidor lo crea automáticamente junto a las tablas.
+
+## 9. Documentación de Metodología OOHDM
+
+Este proyecto ha sido diseñado y documentado aplicando la metodología **OOHDM** (*Object-Oriented Hypermedia Design Method*), modelando el dominio, la navegación, la interfaz abstracta y la implementación física.
+
+Toda la documentación detallada, explicaciones y la **Matriz de Correspondencia Trazable** se encuentran en la carpeta de documentación: **[Ver Documentación Oficial OOHDM](docs/oohdm/OOHDM.md)**
+
+### Diagramas OOHDM de la Plataforma:
+1. **Diseño Conceptual:** Modelo de entidades (`Mascota` y `Cita`).
+2. **Diseño Navegacional:** Estructura de nodos (`Inicio`, `Acerca`, `Registro`, `Servicios`) y flujo del `mascota_id`.
+3. **Diseño de Interfaz Abstracta:** Especificación de formularios, inputs, botones y respuestas HTTP (`201` / `400`).
+4. **Diseño de Implementación:** Arquitectura cliente-servidor nativa con Node.js, peticiones HTTP GET/POST y SQLite (`veterinaria.db`).
